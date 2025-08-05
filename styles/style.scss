@@ -1,11 +1,52 @@
+/*======================================================*\
+| VARIABLES                                              |
+\*======================================================*/
+// misc
+$debug-mode: true;
+
+// fonts
+$fontMain: 'Rubik';
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+}
+
+/*======================================================*\
+| MAIN                                                   |
+\*======================================================*/
+
+body {
+	font-family: $fontMain;
+}
+
 .sideBar {
     position: absolute;
     display: inline-block;
     left: 0;
 	top: 0;
-    border-right: 2px solid blue;
     min-width: 250px;
     height: 100%;
     overflow: hidden;
+	
+	@if $debug-mode { border-right: 2px solid blue; }
+	
     p { margin: 0; }
+	
+	>.element {
+		margin: 5px 0px;
+		padding: 6px 0px 6px 20px;
+		@if $debug-mode {
+			border-top: 2px solid blue;
+			border-bottom: 2px solid red;
+		}
+		
+		&:hover,
+		&:focus {
+			color: white;
+			background-color: black;
+		}
+	}
 }

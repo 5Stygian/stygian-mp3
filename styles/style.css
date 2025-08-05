@@ -1,15 +1,41 @@
+/*======================================================*\
+| VARIABLES                                              |
+\*======================================================*/
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+}
+/*======================================================*\
+| MAIN                                                   |
+\*======================================================*/
+body {
+  font-family: "Rubik";
+}
+
 .sideBar {
   position: absolute;
   display: inline-block;
   left: 0;
   top: 0;
-  border-right: 2px solid blue;
   min-width: 250px;
   height: 100%;
   overflow: hidden;
+  border-right: 2px solid blue;
 }
 .sideBar p {
   margin: 0;
+}
+.sideBar > .element {
+  margin: 5px 0px;
+  padding: 6px 0px 6px 20px;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid red;
+}
+.sideBar > .element:hover, .sideBar > .element:focus {
+  color: white;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

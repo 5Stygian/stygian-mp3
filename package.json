@@ -1,0 +1,40 @@
+{
+	"name": "stygian-mp3",
+	"version": "0.0.1",
+	"description": "A simple MP3 player",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"start-tw": "electron --trace-warnings .",
+		
+		"ef-start": "electron-forge start",
+		"package": "electron-forge package",
+		"make": "electron-forge make",
+		
+		"test": "echo \\\"Error: no test specified\\\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/5Stygian/stygian-mp3.git"
+	},
+	"author": "5Stygian",
+	"license": "SEE LICENSE IN LICENSE",
+	"bugs": {
+		"url": "https://github.com/5Stygian/stygian-mp3/issues"
+	},
+	"homepage": "https://github.com/5Stygian/stygian-mp3#readme",
+	"devDependencies": {
+		"@electron-forge/cli": "^7.8.2",
+		"@electron-forge/maker-deb": "^7.8.2",
+		"@electron-forge/maker-rpm": "^7.8.2",
+		"@electron-forge/maker-squirrel": "^7.8.2",
+		"@electron-forge/maker-zip": "^7.8.2",
+		"@electron-forge/plugin-auto-unpack-natives": "^7.8.2",
+		"@electron-forge/plugin-fuses": "^7.8.2",
+		"@electron/fuses": "^2.0.0",
+		"electron": "^37.2.5"
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.1"
+	}
+}

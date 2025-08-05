@@ -1,0 +1,15 @@
+.sideBar {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  border-right: 2px solid blue;
+  min-width: 250px;
+  height: 100%;
+  overflow: hidden;
+}
+.sideBar p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

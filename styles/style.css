@@ -20,9 +20,11 @@ body {
   display: inline-block;
   left: 0;
   top: 0;
-  min-width: 250px;
+  width: 20%;
+  min-width: 15%;
   height: 100%;
   overflow: hidden;
+  z-index: 2;
   border-right: 2px solid blue;
 }
 .sideBar p {
@@ -45,6 +47,20 @@ body {
   color: white;
   background-color: black;
   cursor: pointer;
+}
+
+.main {
+  color: white;
+  background-color: green;
+  padding-left: 8px;
+  overflow: hidden;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

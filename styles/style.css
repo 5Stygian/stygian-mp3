@@ -12,6 +12,7 @@
 \*======================================================*/
 body {
   font-family: "Rubik";
+  font-size: 16px;
 }
 
 .sideBar {
@@ -28,14 +29,22 @@ body {
   margin: 0;
 }
 .sideBar > .element {
+  background-color: white;
   margin: 5px 0px;
   padding: 6px 0px 6px 20px;
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  width: 100%;
+  border-left: 0px solid rgba(0, 0, 0, 0);
+  border-right: 0px solid rgba(0, 0, 0, 0);
   border-top: 2px solid blue;
   border-bottom: 2px solid red;
 }
-.sideBar > .element:hover, .sideBar > .element:focus {
+.sideBar > .element:hover {
   color: white;
   background-color: black;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,7 @@ $fontMain: 'Rubik';
 
 body {
 	font-family: $fontMain;
+	font-size: 16px;
 }
 
 .sideBar {
@@ -31,22 +32,29 @@ body {
     height: 100%;
     overflow: hidden;
 	
+	 p { margin: 0; }
+	
 	@if $debug-mode { border-right: 2px solid blue; }
 	
-    p { margin: 0; }
-	
 	>.element {
+	background-color: white;
 		margin: 5px 0px;
 		padding: 6px 0px 6px 20px;
+		display: block;
+		text-align: left;
+		font-size: 16px;
+		width: 100%;
+		border-left: 0px solid rgba(0,0,0,0);
+		border-right: 0px solid rgba(0,0,0,0);
 		@if $debug-mode {
 			border-top: 2px solid blue;
 			border-bottom: 2px solid red;
 		}
 		
-		&:hover,
-		&:focus {
+		&:hover {
 			color: white;
 			background-color: black;
+			cursor: pointer;
 		}
 	}
 }

@@ -2,10 +2,10 @@
 | VARIABLES                                              |
 \*======================================================*/
 // misc
-$debug-mode: true;
+$debug-mode: true; // bool
 
 // fonts
-$fontMain: 'Rubik';
+$fontMain: 'Rubik'; // str
 @font-face {
     font-family: 'Rubik';
     font-style: normal;
@@ -24,20 +24,23 @@ body {
 }
 
 body,
-table, tbody, td, tr {
+table, tbody, tr, td {
 	padding: 0px;
 	margin: 0px;
 }
 
+table, tbody, tr, td {
+	border-spacing: 0;
+}
+
+table {
+	width: 100%;
+}
+
 .sideBar {
-    display: inline-block;
-    height: 100%;
-    overflow: hidden;
-	z-index: 2;
-	
-	p { margin: 0; }
-	
-	@if $debug-mode { border-right: 2px solid blue; }
+	width: 25%;
+
+	@if $debug-mode { border-right: 2px solid red; }
 	
 	>.element {
 		background-color: white;
@@ -66,9 +69,10 @@ table, tbody, td, tr {
 .main {
 	color: white;
 	background-color: green;
-	padding-left: 8px;
-	overflow: hidden;
-	display: inline-block;
-	height: 100%;
-	z-index: 1;
+}
+
+.currentInfo {
+	width: 20%;
+
+	@if $debug-mode { border-left: 2px solid red; }
 }
